@@ -9,6 +9,7 @@ import ShoppingCard from '../screens/ShoppingCardScreen/ShoppingCard';
 import HometStack from './HomeStack';
 import Icon from 'react-native-vector-icons/Entypo';
 import AdressScreenStack from './AdressStack';
+import SignOutScreen from '../screens/SignOutScreen/signOutScreen'
 const Tab = createBottomTabNavigator();
 const BottomTabs = () => {
   return (
@@ -29,7 +30,7 @@ const BottomTabs = () => {
       />
       <Tab.Screen
         name="Adress"
-        component={AdressScreen}
+        component={SignOutScreen}
         options={{
           headerShown: false,
 

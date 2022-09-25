@@ -1,0 +1,15 @@
+projects:
+  amazoneclone:
+    schemaPath: src/graphql/schema.json
+    includes:
+      - AmazoneGraph
+    excludes:
+      - ./amplify/**
+    extensions:
+      amplify:
+        codeGenTarget: typescript
+        generatedFileName: src/API.ts
+        docsFilePath: .
+extensions:
+  amplify:
+    version: 3
